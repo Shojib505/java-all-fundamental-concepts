@@ -5,27 +5,26 @@ import java.util.Scanner;
 public class Palindrom {
     public static void main(String[] args) {
         Scanner boride = new Scanner(System.in);
-        int num,temp,r,sum=0;
-        
+        int num, temp, r, sum = 0;
+
         System.out.print("Enter Your Number = ");
         num = boride.nextInt();
-        
+
         temp = num;
-        
-        while(temp!=0){
-        
-        r = temp%10;
-        sum = sum*10+r;
-        temp = temp/10;
-        
+
+        while (temp != 0) {
+
+            r = temp % 10;
+            sum = sum * 10 + r;
+            temp = temp / 10;
+
         }
-        if(sum == num){
+        if (sum == num) {
             System.out.println("Number Is Palindrom");
-        }else{
+        } else {
             System.out.println("Number Is Not Palindrom");
         }
-        
-        
+
     }
-    
+
 }
